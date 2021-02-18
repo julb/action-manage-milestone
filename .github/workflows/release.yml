@@ -14,7 +14,7 @@ jobs:
       run: |
         echo ::set-output name=release_source_branch_name::${GITHUB_REF#refs/heads/}
         echo ::set-output name=release_version::${GITHUB_REF#refs/heads/releases/}
-        echo ::set-output name=release_major_version::$$(awk -F. '{print $1}' <<< ${GITHUB_REF#refs/heads/releases/})
+        echo ::set-output name=release_major_version::$(awk -F. '{print $1}' <<< ${GITHUB_REF#refs/heads/releases/})
         echo ::set-output name=release_target_maintenance_branch_name::$(awk -F. '{print "maintenances/" $1 "." $2 ".x"}' <<< ${GITHUB_REF#refs/heads/releases/})
         echo ::set-output name=release_target_default_branch_name::main
 
