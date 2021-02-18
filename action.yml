@@ -1,5 +1,7 @@
 name: Manage milestones
 description: "Manage the milestones for a given repository"
+icon: check-circle
+color: blue
 author: "julb"
 inputs:
   title:
