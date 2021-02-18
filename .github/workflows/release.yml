@@ -14,6 +14,7 @@ jobs:
       run: |
         echo ::set-output name=release_source_branch_name::${GITHUB_REF#refs/heads/}
         echo ::set-output name=release_version::${GITHUB_REF#refs/heads/releases/}
+        echo ::set-output name=release_major_version::$$(awk -F. '{print $1}' <<< ${GITHUB_REF#refs/heads/releases/})
         echo ::set-output name=release_target_maintenance_branch_name::$(awk -F. '{print "maintenances/" $1 "." $2 ".x"}' <<< ${GITHUB_REF#refs/heads/releases/})
         echo ::set-output name=release_target_default_branch_name::main
 
@@ -86,6 +87,13 @@ jobs:
         message: "Updating files with version ${{ steps.vars.outputs.release_version }}"
         push: "origin ${{ steps.vars.outputs.release_version }}"
         tag: "${{ steps.vars.outputs.release_version }}"
+
+    - name: Update major tag
+      uses: richardsimko/update-tag@v1
+      with:
+        tag_name: v${{ steps.vars.outputs.release_major_version }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Publish artifacts
       run: echo "Publish artifacts to repository......."
