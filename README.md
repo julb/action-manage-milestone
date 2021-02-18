@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Manage the milestone
-        uses: julb/action-manage-milestone@1.0.1
+        uses: julb/action-manage-milestone@1.0.0
         with:
           title: Some title
           state: open
