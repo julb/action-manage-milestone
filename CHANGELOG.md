@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2](https://github.com/julb/action-manage-milestone/tree/1.0.2) (2021-02-18)
+
+[Full Changelog](https://github.com/julb/action-manage-milestone/compare/1.0.1...1.0.2)
+
+**Fixed bugs:**
+
+- Fix branding of Github action [\#3](https://github.com/julb/action-manage-milestone/pull/3) ([julb](https://github.com/julb))
+
 ## [1.0.1](https://github.com/julb/action-manage-milestone/tree/1.0.1) (2021-02-18)
 
 [Full Changelog](https://github.com/julb/action-manage-milestone/compare/1.0.0...1.0.1)
