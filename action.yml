@@ -1,0 +1,23 @@
+name: Manage milestones
+description: "Manage the milestones for a given repository"
+author: "julb"
+inputs:
+  title:
+    description: "The milestone title."
+    required: true
+  state:
+    description: "The milestone initial state."
+    default: "open"
+    required: false
+  description:
+    description: "The milestone description."
+    required: false
+  due_on:
+    description: "The milestone due date."
+    required: false
+outputs:
+  number:
+    description: "The milestone number."
+runs:
+  using: "docker"
+  image: "Dockerfile"
