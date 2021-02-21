@@ -45,6 +45,7 @@ jobs:
           state: closed
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
 
 - Delete the milestone
 
