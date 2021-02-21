@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.5](https://github.com/julb/action-manage-milestone/tree/1.0.5) (2021-02-21)
+
+[Full Changelog](https://github.com/julb/action-manage-milestone/compare/1.0.4...1.0.5)
+
+**Merged pull requests:**
+
+- Create a major tag during release [\#6](https://github.com/julb/action-manage-milestone/pull/6) ([julb](https://github.com/julb))
+
 ## [1.0.4](https://github.com/julb/action-manage-milestone/tree/1.0.4) (2021-02-18)
 
 [Full Changelog](https://github.com/julb/action-manage-milestone/compare/1.0.3...1.0.4)
@@ -10,15 +18,11 @@
 
 ## [1.0.3](https://github.com/julb/action-manage-milestone/tree/1.0.3) (2021-02-18)
 
-[Full Changelog](https://github.com/julb/action-manage-milestone/compare/v1...1.0.3)
+[Full Changelog](https://github.com/julb/action-manage-milestone/compare/1.0.2...1.0.3)
 
 **Implemented enhancements:**
 
 - Update the major tag on release [\#4](https://github.com/julb/action-manage-milestone/pull/4) ([julb](https://github.com/julb))
-
-## [v1](https://github.com/julb/action-manage-milestone/tree/v1) (2021-02-18)
-
-[Full Changelog](https://github.com/julb/action-manage-milestone/compare/1.0.2...v1)
 
 ## [1.0.2](https://github.com/julb/action-manage-milestone/tree/1.0.2) (2021-02-18)
 
