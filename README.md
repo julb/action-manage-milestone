@@ -13,20 +13,51 @@ The GitHub Action for managing milestones of the GitHub repository.
 
 ### Example Workflow file
 
-An example workflow to authenticate with GitHub Platform:
+- Create a milestone:
 
 ```yaml
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Manage the milestone
-        uses: julb/action-manage-milestone@latest
+      - name: Create the milestone
+        uses: julb/action-manage-milestone@v1
         with:
           title: Some title
           state: open
           description: Some description
           due_on: "2022-01-01"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+- Close the milestone
+
+```yaml
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close the milestone
+        uses: julb/action-manage-milestone@v1
+        with:
+          title: Some title
+          state: closed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+- Delete the milestone
+
+```yaml
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close the milestone
+        uses: julb/action-manage-milestone@v1
+        with:
+          title: Some title
+          state: deleted
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
